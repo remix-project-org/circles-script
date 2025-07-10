@@ -18,6 +18,8 @@ const run = async () => {
     const baseGroupAvatar = await sdk.getAvatar(groupAddress.toLowerCase())
     
     console.log('group avatar', baseGroupAvatar)
+    console.log('owner is', await baseGroupAvatar.owner())
+    console.log('trust relations are', await baseGroupAvatar.getTrustRelations())
 }
 
 run().then(console.log).catch(console.error)

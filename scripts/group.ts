@@ -64,7 +64,7 @@ const run = async () => {
     console.log('receipt', receipt)
 
     // Step 3: Extract the group address from emitted events
-    const groupAddress = ethers.stripZerosLeft(receipt.logs[9].topics[1])
+    const groupAddress = ethers.stripZerosLeft(receipt.logs[15].topics[1])
 
     // Step 4: Get the avatar for the created group
     const baseGroupAvatar = await sdk.getAvatar(groupAddress.toLowerCase())
