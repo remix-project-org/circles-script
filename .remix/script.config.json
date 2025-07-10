@@ -1,0 +1,7 @@
+{
+  "defaultConfig": "circles-sdk",
+  "customConfig": {
+    "baseConfiguration": "default",
+    "dependencies": []
+  }
+}
